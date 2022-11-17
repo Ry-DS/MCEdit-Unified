@@ -7461,5 +7461,73 @@
                     "mode": "data"
                 }]
         }
+    },
+    "nuclearcraft": {
+        "cell_block": {
+            "id": 410,
+            "properties": []
+        },
+        "cooler": {
+            "id": 411,
+            "properties": [
+                {
+                    "<data>": 5,
+                    "type": "glowstone"
+                },
+                {
+                    "<data>": 12,
+                    "type": "emerald"
+                },
+                {
+                    "<data>": 6,
+                    "type": "lapis"
+                },
+                {
+                    "<data>": 15,
+                    "type": "magnesium"
+                },
+                {
+                    "<data>": 2,
+                    "type": "redstone"
+                },
+                {
+                    "<data>": 3,
+                    "type": "quartz"
+                },
+                {
+                    "<data>": 4,
+                    "type": "gold"
+                },
+                {
+                    "<data>": 1,
+                    "type": "water"
+                },
+                {
+                    "<data>": 14,
+                    "type": "tin"
+                },
+                                {
+                    "<data>": 7,
+                    "type": "diamond"
+                },
+                {
+                    "<data>": 13,
+                    "type": "copper"
+                },
+                                {
+                    "<data>": 11,
+                    "type": "iron"
+                }
+            ]
+        },
+        "ingot_block": {
+            "id": 407,
+            "properties": [
+                {
+                    "<data>": 8,
+                    "type": "graphite"
+                }
+            ]
+        }
     }
 }

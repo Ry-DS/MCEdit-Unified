@@ -63,7 +63,7 @@ class Block(object):
         return r
 
 
-id_limit = 4096
+id_limit = 32767
 
 
 class BlockstateAPI(object):
@@ -141,25 +141,29 @@ class BlockstateAPI(object):
         :return: A tuple containing the numerical ID/Data pair (<id>, <data>)
         :rtype: tuple
         """
-        
+
         if ":" in name:
             prefix, name = name.split(":")
         else:
             prefix = "minecraft"
-            
+
         if prefix not in self.blockstates:
+            # TODO support modded blocks
+            print(Exception("Unknown prefix", prefix))
             return -1, -1
         elif name not in self.blockstates[prefix]:
+            print(Exception("Unknown block", name))
             return -1, -1
-        
         bid = self.blockstates[prefix][name]["id"]
-        for prop in self.blockstates[prefix][name]["properties"]:
-            correct = True
-            for (key, value) in properties.iteritems():
-                if key in prop:
-                    correct = correct and (prop[key] == value)
-            if correct:
-                return bid, prop["<data>"]
+        for (key, value) in properties.iteritems():
+            for prop in self.blockstates[prefix][name]["properties"]:
+                if key in prop and prop[key] == value:
+                    return bid, prop["<data>"]
+
+
+
+        if len(properties) > 0:
+            print(Exception("Unknown property", properties))
         return bid, 0
     
     @staticmethod
