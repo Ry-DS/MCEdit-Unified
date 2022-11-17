@@ -7464,72 +7464,68 @@
     },
     "nuclearcraft": {
         "cell_block": {
-            "id": 4520,
+            "id": 410,
             "properties": []
         },
         "cooler": {
-            "id": 4521,
+            "id": 411,
             "properties": [
                 {
-                    "<data>": 0,
-                    "variant": "stone"
-                },
-                {
-                    "<data>": 1,
-                    "variant": "granite"
-                },
-                {
-                    "<data>": 2,
-                    "variant": "smooth_granite"
-                },
-                {
-                    "<data>": 3,
-                    "variant": "diorite"
-                },
-                {
-                    "<data>": 4,
-                    "variant": "smooth_diorite"
-                },
-                {
                     "<data>": 5,
-                    "variant": "andesite"
+                    "type": "glowstone"
+                },
+                {
+                    "<data>": 12,
+                    "type": "emerald"
                 },
                 {
                     "<data>": 6,
-                    "variant": "smooth_andesite"
+                    "type": "lapis"
+                },
+                {
+                    "<data>": 15,
+                    "type": "magnesium"
+                },
+                {
+                    "<data>": 2,
+                    "type": "redstone"
+                },
+                {
+                    "<data>": 3,
+                    "type": "quartz"
+                },
+                {
+                    "<data>": 4,
+                    "type": "gold"
+                },
+                {
+                    "<data>": 1,
+                    "type": "water"
+                },
+                {
+                    "<data>": 14,
+                    "type": "tin"
+                },
+                                {
+                    "<data>": 7,
+                    "type": "diamond"
+                },
+                {
+                    "<data>": 13,
+                    "type": "copper"
+                },
+                                {
+                    "<data>": 11,
+                    "type": "iron"
                 }
             ]
         },
         "ingot_block": {
-            "id": 4517,
+            "id": 407,
             "properties": [
                 {
-                    "<data>": 0,
-                    "variant": "stone"
-                },
-                {
-                    "<data>": 1,
-                    "variant": "granite"
-                },
-                {
-                    "<data>": 2,
-                    "variant": "smooth_granite"
-                },
-                {
-                    "<data>": 3,
-                    "variant": "diorite"
-                },
-                {
-                    "<data>": 4,
-                    "variant": "smooth_diorite"
-                },
-                {
-                    "<data>": 5,
-                    "variant": "andesite"
-                },
-                {
-                    "<data>": 6,
-                    "variant": "smooth_andesite"
+                    "<data>": 8,
+                    "type": "graphite"
                 }
             ]
         }
