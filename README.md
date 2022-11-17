@@ -46,6 +46,9 @@ These programs and packages are required:
   * If you use Unicode characters in any of your file paths, you **need** to use 2.7.14
 * virtualenv (not strictly required, but highly recommended)
 
+Finding installation material for Python2.7 and related C++ distributables is difficult as they phase out of support.
+You can find archived installers in the `legacy_installers/` folder of this repo.
+
 **Python packages**
 
 * [pygame 1.9.4](http://pygame.org/install.html)

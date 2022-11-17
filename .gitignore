@@ -90,3 +90,4 @@ player-skins/
 *.profile
 splash
 leveldb-mcpe/leveldb-mcpe.lib
+!/legacy_installers/
