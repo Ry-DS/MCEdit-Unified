@@ -63,7 +63,7 @@ class Block(object):
         return r
 
 
-id_limit = 4096
+id_limit = 32767
 
 
 class BlockstateAPI(object):
@@ -149,10 +149,12 @@ class BlockstateAPI(object):
 
         if prefix not in self.blockstates:
             # TODO support modded blocks
-            raise Exception("Unknown block")
+            print(Exception("Unknown prefix", prefix))
+            return -1, -1
         elif name not in self.blockstates[prefix]:
-            raise Exception("Unknown block")
-
+            print(Exception("Unknown block", name))
+            return -1, -1
+        print(properties)
         bid = self.blockstates[prefix][name]["id"]
         for prop in self.blockstates[prefix][name]["properties"]:
             correct = True
@@ -161,6 +163,9 @@ class BlockstateAPI(object):
                     correct = correct and (prop[key] == value)
             if correct:
                 return bid, prop["<data>"]
+
+        if len(properties) > 0:
+            print(Exception("Unknown property", properties))
         return bid, 0
     
     @staticmethod
